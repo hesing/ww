@@ -1,0 +1,230 @@
+﻿@import "base/common";
+@import "helpers/mixins";
+@import "../Lib_Stylesheets/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker";
+@import 'base/_base';
+@import 'components/_header';
+@import 'components/_tab';
+@import 'components/_navmodules';
+@import url('../Lib_Stylesheets/plugins/OwlCarousel/owl.carousel.css');
+@import url('../Lib_Stylesheets/plugins/OwlCarousel/owl.theme.css');
+
+/*** scroll issue fix for desktop & mobile ***/
+.owl-wrapper .list-group-item{
+  display: block;
+  margin-right: 5px;
+  border: none;
+  background-color: $brand-lighter;
+}
+
+.owl-wrapper .list-group-item.active{
+    color: #fff;
+    background-color: $brand-primary;    
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  padding: 5px 9px;
+  position: absolute;
+}
+
+.owl-theme .owl-buttons i{
+  margin-top: 2px;
+    }
+.owl-theme .owl-controls .owl-buttons .owl-prev{
+    left: 0;
+    top: 47px;
+    }
+
+.owl-theme .owl-controls .owl-buttons .owl-next{
+    left: 35px;
+    top: 47px;
+    }
+
+.all-phases{
+    position: relative;
+    top: -9px;
+      float: right;
+    }
+
+.all-phases .dropdown-menu{
+    left: auto;
+    right: 0;
+}
+
+.breadcrumb{
+    margin-top: -10px;
+}
+.breadcrumb > li + li:before {
+    color: #ccc;
+    content: "> ";
+    padding: 0 5px;
+}
+textarea.form-control
+{
+    background-color:#fff;
+}
+#phaseaccordion 
+{
+    .panel-body
+    {
+        background-color:#fff;
+    }
+        thead th
+    {
+        background-color:#515151;
+        color:#f2f2f2;
+    }
+}
+#projectPhaseDetails h2
+{
+    margin:0;
+}
+#PhaseDetails,#PhaseProcess-Steps
+{
+    background-color:$brand-virtuoso-bgcolor;
+}
+#PhaseProcess-Steps
+{
+    padding:20px;
+}
+h3
+{
+    padding-bottom:10px;
+}
+.m-t-s{
+    margin-top: 10px;
+}
+
+.card-phasenav
+{
+    padding:0;
+      .fa-exclamation-circle
+    {
+        position: absolute;
+        right: 41px;
+        margin-top:4px; 
+    }
+     .fa-circle
+    {
+        margin-top:4px;
+    }
+     li a
+    {
+        border:1px solid #ccc;
+        border-top-color:transparent;
+        background-color:$brand-virtuoso-bgcolor;
+        border-right-color: transparent;
+    }
+     li:first-child > a
+    {
+        border-top:1px solid #ccc;
+    }
+     li.active > a
+    {
+        border-right-color:transparent;
+    
+    }
+         li
+    {
+         width: 101%;
+    }
+         li.active
+    {  
+        z-index: 100;
+    }
+         li + li
+    {
+        margin-top:0;
+    }
+}
+
+.basephases .checkbox-inline + .checkbox-inline
+{
+    margin-left:0;
+}
+
+.phasecontainer
+{
+    padding:2%;
+    border:1px solid #ccc;
+   
+}
+#tabContent
+{
+    padding:15px;
+    border:1px solid #ccc;
+}
+.tab-content .table > thead > tr > th{
+    vertical-align: top;
+}
+#PhaseDetails > div > div
+{
+    padding:20px;
+   
+}
+.table.accordian tr{
+    position: relative;
+}
+.tooltip-inner{
+    white-space: nowrap;
+}
+
+.verified{
+    cursor: default;
+}
+
+.verified + .tooltip .tooltip-inner{
+        font-size: 1.5em;
+}
+
+.verified + .tooltip .tooltip-arrow{
+        bottom: 1px;
+}
+
+.table.accordian [data-toggle="collapse"] > td{
+    background-color: #dbdbdb;
+    border-top: 1px solid #fff;
+    cursor: pointer;
+}
+
+// notification
+.show-updated-label{
+    display: inline-block;
+    margin-right: 20px;
+}
+.hiddenRow {
+    padding: 0 !important;
+}
+
+.hiddenRow > div{
+    border: 1px solid #eee;
+    border-top: none;
+}
+
+#deletePhaseModal .list-group-item > label{
+    display: block;
+}
+
+#addPhaseModal .pTop{
+    padding-top: 8px;
+}
+
+.page-alert strong{
+    vertical-align: super;
+    margin-left: 10px;
+}
+
+.save-all-step{
+    background-color: #f5f5f5;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05) inset;
+    line-height: 25px;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.process-step-info{
+    padding-left: 20px;
+    position: absolute;
+    top: -3px;
+}

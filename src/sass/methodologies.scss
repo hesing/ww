@@ -1,0 +1,224 @@
+﻿@import "base/common";
+@import 'base/_base';
+@import "helpers/mixins";
+@import 'components/_header';
+
+.ww-header{
+    margin-bottom: 0;
+}
+
+.tooltip-inner{
+    white-space: nowrap;
+}
+
+.sub-drop-down{
+    text-indent: 15px;
+    margin-bottom: 0;
+}
+
+.fa-cloud-download{
+    padding-top: 3px;
+}
+/*.sub-navbar{
+    margin-top: -10px;
+}
+
+.sub-navbar .navbar {
+    height: 45px;
+    min-height: auto;        
+}
+
+.sub-navbar .navbar-nav > li > a{
+    padding: 13px 40px;
+}*/
+
+.methodologies .active-item{
+    display: none;
+}
+
+.methodologies .list-group-item{
+    border: none;
+    background: none;
+}
+
+.methodologies .list-group-item > a{
+    display: block;
+    text-decoration: none;
+    outline: none;
+}
+
+.methodologies .list-group-item.active, .methodologies .list-group-item:hover, .methodologies .list-group-item.active:hover{
+    background-color:  none;
+    color: $gray-dark;
+}
+
+.methodologies a.list-group-item:hover, .methodologies a.list-group-item:focus{
+    background: none;
+}
+
+
+.step-details h2+h3{
+    font-weight: bold;
+}
+
+.steps p {
+    position: relative;
+} 
+
+.steps p > i {
+    position: absolute;
+    right: 0;
+    top: 4px;
+}
+
+/*.col > div{
+    background-color: #595959;
+}
+
+.col > ul {
+    background-color: #7F7F7F;
+}*/
+
+@media (min-width: 768px) {
+
+    /* top row */
+    /*.col > div, .col > ul{ 
+        margin-bottom: -99999px;
+        padding-bottom: 99999px;  
+    }*/
+
+    /* bottom row */
+    .col-base{ 
+        margin-top: -15px;
+    }
+
+    .methodologies .col:first-child{
+        padding-right: 0;
+    }
+
+    .methodologies .col:nth-child(2){
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    /*.col ul,.step-details, #projectSteps > ul{
+        max-height: 450px;
+        overflow-y: auto;
+    }*/
+}
+
+.col-wrap{
+    overflow: hidden; 
+}
+
+    #contentSection > div{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #contentSection > div > h2{
+        padding: 10px 15px;
+        margin-bottom: 0;
+    }
+
+    #contentSection > div:nth-child(3){
+        padding-left: 0;   
+    }
+
+
+    #contentSection > div:first-child > h2{
+        background-color: $gray-dark;    
+        color: #fff;
+    }
+
+    #contentSection > div:nth-child(2) > h2{
+        background-color: $gray;  
+        color: #fff;  
+    }
+
+    #contentSection > div:nth-child(3) > h2{
+        background-color: $gray-light;    
+    }
+
+    #contentSection > div:nth-child(4) > h2{
+        background-color: $brand-lighter;    
+    }
+
+    .sure-steps{
+        background-color: $gray;
+    }
+
+    .sure-steps .list-group-item > a, .sure-steps a.list-group-item, .sure-steps a.list-group-item:hover {
+        color: #fff;
+    }
+
+    .project-phases{
+        background-color: $gray-light;
+        color: $gray-dark;
+    }
+
+    .project-phases a{
+        color: $gray-dark;
+    }
+
+    .steps{
+        background-color: $brand-lighter;
+    }
+
+    .sure-steps .list-group-item.active, .sure-steps .list-group-item.active:focus, .sure-steps a.list-group-item.active{
+        background-color: $gray-light;
+    }
+
+    .project-phases .list-group-item.active, .project-phases .list-group-item.active:focus{      
+        background-color: $brand-lighter;
+    }
+
+    .steps .list-group-item.active, .steps .list-group-item.active:focus{      
+        background-color: #fff;
+        color: $gray-dark;
+    }
+
+    .methodologies .list-group-item.active a, .methodologies a.list-group-item.active, .methodologies a.list-group-item.active:focus,  .methodologies .list-group-item.active:focus a, .steps > li > strong{
+        color: $brand-success;
+        font-weight: 400;
+    }
+
+@media (min-width: $screen-sm-min) {
+    html, body{
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        margin-bottom: 0;
+    }
+
+    #mainContent{
+        @include set-full-window-height(49px);
+    }
+
+    #contentSection, #contentSection > div, #stepDetails{
+        height: 100%;
+    }
+    /*#contentSection > div:last-child{
+        padding-right: 0;
+    }*/
+
+    .sure-steps, #projectPhases, .steps, .step-details, .people{
+        @include set-full-window-height(112px);
+        overflow-y: auto;
+    }
+
+    // not scroll related
+    .pull-right-sm {
+      float: right;
+    }
+}
+
+@media (max-width: $screen-xs-max) {
+    .row.base{
+        display:none;
+    }
+
+    .collapsibleItem{
+        cursor: pointer;
+    }
+}

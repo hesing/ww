@@ -1,0 +1,57 @@
+﻿#TimeLineBase {
+    height: 100px;
+    top: 50px;
+    position: absolute;
+    width: 100%;
+    background-color: rgba(192,192,192,0.6);
+
+    hr {
+    margin-top: 50px;
+    border: 2px solid #fff;
+    }
+}
+
+.mileStoneDate,.mileStoneText {
+    background-color: #F1F1F1;
+    text-align: center;
+    position: absolute;  
+    border-radius: 10px;
+    padding: 5px 5px 5px 5px;
+    border: 1px solid #808080;  
+}
+.mileStoneDate
+{
+    width: 80px;
+    top: 0;
+}
+.mileStoneText {
+    width: 140px; 
+    bottom: 0;
+    height: 30px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.milesTone,.milesToneImg
+{
+    float: left;
+    position: absolute;
+    z-index: 2;
+}
+.milesTone {
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    background-image: url('../Images/milestoneBg.PNG');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+.milesToneImg {
+    height: 80%;    
+    top: 10%;   
+}
+
+
+
+
+

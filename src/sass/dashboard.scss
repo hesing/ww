@@ -1,0 +1,524 @@
+﻿@import "base/common";
+@import 'base/_base';
+@import 'components/_header';
+
+@import url('../Lib_Stylesheets/plugins/OwlCarousel/owl.carousel.css');
+@import url('../Lib_Stylesheets/plugins/OwlCarousel/owl.theme.css');
+@import url('../lib_stylesheets/plugins/jqgrid/jquery-ui-custom.css');
+@import url('../lib_stylesheets/plugins/jqgrid/ui.jqgrid-bootstrap-ui.css');
+@import url('../lib_stylesheets/plugins/jqgrid/ui.jqgrid-bootstrap.css');
+@import url('../lib_stylesheets/plugins/jqgrid/jquery-ui-custom.css');
+@import 'components/tab';
+@import 'components/grid';
+
+
+.virtuoso-tab-content{
+    background-color: #F2F2F2;
+}
+
+.filter-applied span {
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Segoe UI";
+
+    &.mr-15 {
+        font-weight: 400;
+    }
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+.virtuoso-pd15{
+    padding:15px;
+}
+
+.panel-default > .virtuoso-sub-accordian{
+    background-color:#f7f7f7;
+    color: #3291e6;
+}
+
+.virtuoso-tab-cnt{
+    padding:15px;
+}
+
+.virtuoso-dashboardfield .btn {
+    width: 100%;
+    text-align: left;
+    padding: 8px 18px;
+    border-radius: 0px;
+}
+
+.virtuoso-dashboardfield .btn-secondary:hover {
+    background-color: #ffffff;
+}
+
+.virtuoso-dashboardfield .btn-secondary:active, .virtuoso-dashboardfield .btn-secondary:focus,
+.btn-secondary:active, .btn-secondary.active, .open > .btn-secondary.dropdown-toggle {
+    background-color: #f4f4f4 !important;
+    border-color: #ccc !important;
+    box-shadow: none;
+}
+
+.virtuoso-dashboardfield .btn-secondary:active .caret, .virtuoso-dashboardfield .btn-secondary:focus .caret {
+    color: $brand-success-light;
+}
+
+/*.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus, .dropdown-menu > li > a:hover {
+    background-color: $brand-success-light !important;
+}*/
+
+/*.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+    background-color: $brand-success-light !important;
+}*/
+
+.dropdown-menu > .active > a label {
+    color: $body-bg;
+}
+
+.dropdown-menu > li > a:hover .checkbox {
+    color: $body-bg;
+}
+
+.virtuoso-dashboardfield .btn.multiselect span {
+    margin-top: 0px;
+}
+
+.virtuoso-dashboardfield .btn i {
+    margin-right: 0px;
+}
+
+.virtuoso-dashboardfield .btn-group {
+    width: 100%;
+    text-align: left;
+}
+
+.virtuoso-dashboardfield .btn .caret {
+    float: right;
+    margin-top: 5px;
+}
+
+.virtuoso-dashboardfield ul {
+    width: 100%;
+}
+
+.virtuoso-dashboardfield {
+    .input-group-addon{
+        display:none;
+    }
+    .input-group{
+        padding:0 2px;
+        .multiselect-search{
+            border-right:none;
+        }
+         .multiselect-search:focus{
+            border-top: 1px solid rgb(204, 204, 204);
+            border-bottom: 1px solid rgb(204, 204, 204);
+            border-left: 1px solid rgb(204, 204, 204);
+            box-shadow:none;
+        }
+    }
+
+    .input-group-btn{
+        border-top: 1px solid rgb(204, 204, 204);
+        border-bottom: 1px solid rgb(204, 204, 204);
+        border-right: 1px solid rgb(204, 204, 204);
+        .btn{
+            background: #fff;
+            border: none;
+            outline: 0;
+        }
+    }
+}
+
+.virtuoso-btn-cnt {
+    float: right;
+}
+
+.formView {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.virtuoso-project-name {
+    margin-bottom: 0;
+}
+
+.virtuoso-project-name-cnt {
+    margin-bottom: 20px;
+}
+
+#filter-section {
+    padding: 0;
+}
+
+/**Button Styling Starts**/
+.virtuoso-btn {
+    color: #7A542B;
+    font-size: 14px;
+    font-family: "Segoe UI Semibold";
+    background-color: #E5AB42;
+    padding: 5px 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+}
+/**Button Styling Ends**/
+
+/**Project Health Status Styling Starts**/
+.virtuoso-project-health-status-cnt {
+    margin-bottom: 15px;
+}
+
+.virtuoso-project-health-status-cnt li {
+    margin-right: 15px;
+}
+
+.project-health-status {
+    li {
+        margin-right: 10px;
+    }
+}
+
+.virtuoso-project-health-title {
+    margin-left: 15px;
+}
+
+.virtuoso-project-health-param {
+    font-size: 15px;
+    font-family: "Segoe UI Semibold";
+    margin-left: 5px;
+    color: #5E5E5E;
+}
+
+.virtuoso-health {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    @include border-radius(10px);
+}
+
+.severity-count{
+    .virtuoso-health {
+        width: 40px;
+        height: 20px;
+         @include border-radius(0);
+        color: #fff;
+    }
+}
+
+.virtuoso-green, .virtuoso-Green, .virtuoso-2{
+    background-color: $brand-success;
+}
+
+.virtuoso-red, .virtuoso-Red, .virtuoso-1{
+    background-color: $brand-danger;
+}
+
+.virtuoso-yellow, .virtuoso-Yellow, .virtuoso-3{
+    background-color: $brand-warning;
+}
+
+.virtuoso-High{
+     background-color:$brand-warning-light;
+}
+.virtuoso-Medium{
+     background-color:$brand-success-light;
+}
+.virtuoso-Critical{
+     background-color:$brand-danger-light;
+}
+.virtuoso-Low{
+     background-color:$brand-gray-light;
+}
+
+
+/**Project Health Status Styling Ends**/
+
+.project-detail-section {
+    margin-bottom: 20px;
+}
+
+.virtuoso-project-data {
+    border: 1px solid #ECF0F1;
+    padding: 10px;
+}
+
+.virtuoso-project-data div {
+    margin-bottom: 10px;
+}
+
+.virtuoso-project-data div > span, .virtuoso-settings-cnt li > span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.virtuoso-project-data div > span:first-child, .virtuoso-settings-cnt li > span:first-child {
+    color: #999999;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.virtuoso-settings-cnt .virtuoso-contributor-list > li > span {
+    color: #333;
+    font-size: 14px;
+}
+
+
+
+/**Settings block Styling Starts**/
+.virtuoso-settings-cnt {
+    background-color: #eee;
+    min-height: 200px;
+}
+
+.virtuoso-settings-title-cnt {
+    margin-bottom: 10px;
+}
+
+.virtuoso-settings-data {
+    padding: 5px 10px 10px 10px;
+}
+
+.virtuoso-settings-cnt li {
+    margin-bottom: 20px;
+}
+
+.virtuoso-contributor-list > li {
+    margin-bottom: 0;
+}
+/**Settings block Styling Ends**/
+
+
+.virtuoso-form .multiselect-container label.checkbox,
+.virtuoso-form .multiselect-container label.radio {
+    padding: 3px 20px 3px 15px;
+}
+
+.virtuoso-form .multiselect-container li a label.checkbox input[type="checkbox"],
+.virtuoso-form .multiselect-container li a label.radio input[type="radio"] {
+    margin-left: -20px;
+    margin-right: 0px;
+}
+
+.virtuoso-form .multiselect-container {
+    max-height: 300px;
+    overflow-y: auto;
+    min-width: 200px;
+}
+
+
+
+.virtuoso-mb15 {
+    margin-bottom: 15px;
+}
+
+.virtuoso-mtop20{
+    margin-top:20px;
+}
+
+/**Dashboard Styling**/
+
+.virtuoso-filter-cnt {
+    margin-top: 20px;
+}
+
+
+#project-carousel {
+    .item {
+        background: url(../images/stripe-background.png) repeat;
+        padding: 15px;
+        margin: 10px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        text-align: left;
+        cursor: pointer;
+        max-height: 200px;
+        height:200px;
+    }
+
+    .activeTile {
+        background: #c9e3b3;
+    }
+
+    .tile-title {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #333;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    .projects-text {
+        font-size: 18px;
+        margin-top: -10px;
+    }
+}
+
+
+
+.virtuoso-project-count {
+    margin: 0;
+    font-size: 72px;
+    font-weight: 200;
+}
+
+.filter-view-cnt {
+    margin-top: 20px;
+    margin-right: 76px;
+}
+
+.filter-view-cnt .dropdown-menu {
+    min-width: 0;
+}
+
+.virtuoso-views-list li {
+    .view-action {
+        display: none;
+    }
+}
+
+.virtuoso-views-list li:hover {
+    .view-action {
+        display: inline-block;
+        margin-right: 5px;
+        float:right;
+        cursor: pointer;
+        em{
+            top:3px;
+            font-size:10px;
+        }
+    }
+}
+
+.virtuoso-views-list{
+    padding: 0 0 0 5px;
+    span{
+        font-size:12px;
+    }
+}
+
+.btn-myproject, .filter-view-cnt .dropdown {
+    display: inline-block;
+}
+
+.health-status {
+    text-decoration: none !important;
+}
+
+#virtuoso-progress {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    z-index: 4000000;
+
+    .progress-image {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: 45%;
+        left: 50%;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+
+.virtuoso-chkbox-cnt {
+    margin-top: 25px;
+    margin-left: 10px;
+}
+
+
+
+.filter-sub-title{
+    padding-bottom: 2px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.severity-count{
+    cursor:pointer;
+    font-size:12px;
+}
+
+.add-to-watchList-project{
+    margin-left: 10px;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.add-to-watchList{
+    cursor: pointer;
+    background: url('../Images/favorite-normal.png') no-repeat;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+
+.added-to-watchList{
+    background: url('../Images/favorite-active.png') no-repeat;
+}
+
+.btn span
+{
+    vertical-align: top;
+    margin-top: 2px;
+    display: inline-block;
+}
+
+
+/**WatchList Loader**/
+i[class*="watch-loader-"]{
+      display:none;
+}
+
+@media only screen and (max-width: 768px) {
+    #tbl-project-paging_left
+    {
+        display:none;
+    }
+    #tbl-project-paging_right
+    {
+        width:35%;
+    }
+ }
+
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+/* IE10+ CSS styles go here */
+   .virtuoso-dashboardfield {
+       .input-group-btn{
+           display:none;
+       }
+
+       .input-group{
+           display:block;
+           .multiselect-search{
+               border-right:1px solid rgb(204, 204, 204);
+               width:99%;
+               display:block;
+            }
+       }
+
+       
+
+
+   }
+}

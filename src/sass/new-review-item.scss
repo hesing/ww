@@ -1,0 +1,22 @@
+﻿@import "base/common";
+@import 'base/_base';
+@import 'components/_header';
+@import 'components/_navmodules';
+@import "../Lib_Stylesheets/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker";
+@import "../Lib_Stylesheets/plugins/bootstrap-editable/bootstrap-editable";
+input[type=text]::-ms-clear {
+  display: none;
+}
+
+.itemContainer
+{
+    background-color:#f2f2f2;
+}
+h3
+{
+    padding-bottom:10px;
+}
+textarea.form-control
+{
+    background-color:#fff;
+}

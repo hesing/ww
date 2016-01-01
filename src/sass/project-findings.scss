@@ -1,0 +1,130 @@
+﻿@import "base/common";
+@import 'base/_base';
+@import 'components/_header';
+@import url('../Lib_Stylesheets/plugins/OwlCarousel/owl.carousel.css');
+@import url('../Lib_Stylesheets/plugins/OwlCarousel/owl.theme.css');
+@import url('../lib_stylesheets/plugins/jqgrid/jquery-ui-custom.css');
+@import url('../lib_stylesheets/plugins/jqgrid/ui.jqgrid-bootstrap-ui.css');
+@import url('../lib_stylesheets/plugins/jqgrid/ui.jqgrid-bootstrap.css');
+@import url('../lib_stylesheets/plugins/jqgrid/jquery-ui-custom.css');
+@import 'components/grid';
+
+
+canvas {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+#projectName {
+    margin-top: 0;
+}
+
+#actionsContainer {
+    padding-top: 20px;
+}
+
+#breadCrumbMobile {
+    display: none;
+    text-align:center;
+}
+h2
+{
+    padding-bottom:10px;
+}
+#breadCrumbMain {
+    display: block;
+}
+
+.nav-pills li a {
+    text-align: right;
+}
+
+.dataContainer {
+    border: 1px solid #878080;
+    padding: 10px;
+}
+.chartHeading {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.chartLegend ul {
+    text-align: center;
+}
+
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    .nav-pills li a {
+        text-align: left;
+    }
+
+    #breadCrumbMobile {
+        display: block;
+    }
+
+    #breadCrumbMain {
+        display: none;
+    }
+}
+
+@media only screen and (min-width : 375px) {
+}
+
+/* Extra Small Devices, Phones, IPhone */
+@media only screen and (min-width : 414px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    .nav-pills li a {
+        text-align: right;
+    }
+
+    #breadCrumbMobile {
+        display: none;
+    }
+
+    #breadCrumbMain {
+        display: block;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 1024px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+}
+

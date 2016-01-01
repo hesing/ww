@@ -1,0 +1,73 @@
+﻿.project-heading
+{
+    background-color:#79B445;
+    color:#fff;
+    h2
+    {
+        margin:14px 0;
+    }
+
+    .btn
+    {
+        margin-top:4px;
+    }
+}
+
+.nav-modules
+{
+    background-color:$brand-virtuoso-bgcolor;
+    border:0;
+    margin-bottom:0;
+    
+    .navbar-nav > li > a
+    {
+        color:#505050;
+    }
+
+    .navbar-nav > li > a:hover
+    {
+        background-color:$brand-virtuoso-bgcolor;
+        color:#505050;
+    }
+    .navbar-nav > .active > a,.navbar-nav > li > a:focus
+    {
+         color:#505050;
+         background-color:#fff;
+    }
+    .navbar-toggle
+    {
+        margin-bottom:0;
+    }
+    .navbar-toggle:hover,.navbar-toggle:focus
+    {
+        background-color:transparent;
+    }
+}
+.breadcrumb
+{
+    clear:both;
+    background-color:#fff;
+    padding: 8px 30px;
+    border-bottom:1px solid #ccc;
+    li a
+    {
+        color: #c8c8c8;
+    }
+    li.active
+    {
+        color:#505050;
+    }
+}    
+.proj-mobile
+{
+    padding:5px 10px;
+    background-color:#79B445;
+    color:#fff;
+}
+@media only screen and (max-width: 768px) {
+    .breadcrumb
+    {
+       padding: 5px 10px;
+    }
+    }
+

@@ -1,0 +1,90 @@
+﻿@import "base/_common";
+@import 'base/_base';
+@import 'components/_header';
+@import "../Lib_Stylesheets/plugins/bootstrap-datetimepicker/bootstrap-datetimepicker";
+/*@import "../Lib_Stylesheets/plugins/bootstrap-editable/bootstrap-editable";*/
+
+#reviewTitle {
+    margin-top: 6px;
+    margin-right:20px;
+}
+#breadCrumbMain {
+    margin-bottom: 20px;
+}
+#commentTitle .label
+{
+    margin-top:3px;
+    margin-right:3px;
+}
+.statusContainer span.label,.media-body span.label
+{
+    font-size:14px;
+    font-weight:600;
+}
+.media-body span.label
+{
+    margin-right:3px;
+}
+.btnCircleGroup 
+{
+    label.btn
+    {
+        width:23px;
+        height:23px;
+    }
+    label.btn.active {
+    border: 3px solid #c8c8c8;
+    }
+}
+.actionCenterPanel {
+    background-color:$brand-virtuoso-bgcolor;  
+    textarea {
+    min-height: 104px;
+    }
+}
+.media .media-heading
+{
+    margin-top:14px;
+}
+.action-status
+{
+padding: 10px;
+margin-top: 20px;
+background: #dfdfdf;
+    h3
+    {
+        line-height:24px;
+       margin: 0 0 10px 0;
+    }
+}
+#commentText {
+    width: 100%;
+    color:#808080;
+}
+#actionCenterFooter {
+    text-align: right;
+    margin-bottom: 20px;
+}
+textarea.form-control
+{
+    background-color:#fff;
+}
+#extensionTab, #resolvedTab {
+    background-color: dimgrey;
+    height: 108px;
+}
+#resolvedTab {
+    background-color: darkgrey;
+}
+
+#historySection {
+    margin-bottom: 20px;
+}
+
+#newDateSection label{
+    padding-left:0;
+}
+
+input[type=text]::-ms-clear {
+  display: none;
+}

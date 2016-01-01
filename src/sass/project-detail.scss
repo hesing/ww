@@ -1,0 +1,405 @@
+﻿@import "base/common";
+@import 'base/_base';
+@import 'components/_timeline';
+@import 'components/_header';
+
+.add-to-watchList-project{
+    margin-left: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    background: url('../Images/favorite-normal.png') no-repeat;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+
+.added-to-watchList{
+   background: url('../Images/favorite-active.png') no-repeat;
+}
+
+.bg-gray {
+    background: #3B3838;
+    padding: 10px;
+    
+    .text-detail {
+    color: #fff;
+    }
+}
+
+
+
+.projectListRisk {
+    margin-top: -4px;
+    padding-left: 2px;
+    list-style-type: circle;
+}
+
+.bigBold {
+    font-weight: normal;
+    position: relative;
+    float: left;
+    color: $gray-dark;
+
+    span:first-child {
+    position: absolute;
+    top: -22px;
+    }
+}
+
+.dueIn p.h2 {
+    margin-top: -10px;
+}
+
+.projectSettings li {
+    margin-bottom: 20px;
+}
+
+.vCenter {
+    line-height: 72px;
+}
+
+[data-status="status0"] {
+    background-color: #3FB618; /*success*/
+}
+
+[data-status="status1"] {
+    background-color: #FF0039; /*danger*/
+}
+
+[data-status="status2"] {
+    background-color: #FF7518; /*warning*/
+}
+
+[data-status="status3"] {
+    background-color: #9954BB; /*warning*/
+}
+
+.text-circle[datastatus="status0"] {
+    background-color: #626262;
+    border-radius: 0;
+}
+
+.text-circle[datastatus="statusRed"], .text-circle[datastatus="status1"], .text-circle[datastatus="statusGreen"],
+.text-circle[datastatus="status2"], .text-circle[datastatus="statusYellow"], .text-circle[datastatus="status3"],
+.text-circle[datastatus="status0"] {
+    width: 15px;
+    height: 10px;
+    margin-right: 0;
+}
+
+.text-circle[datastatus="statusRed"], .text-circle[datastatus="status1"] {
+    background-color: #BF3838;
+    border-radius: 0;
+}
+
+.text-circle[datastatus="statusGreen"], .text-circle[datastatus="status2"] {
+    background-color: #378349;
+    border-radius: 0;
+}
+
+.text-circle[datastatus="statusYellow"], .text-circle[datastatus="status3"] {
+    background-color: #F3BC65;
+    border-radius: 0;
+}
+
+.text-circle[datastatus="statusYellow"] + .media-body, .text-circle[datastatus="statusGreen"] + .media-body, .text-circle[datastatus="statusRed"] + .media-body,
+.text-circle[datastatus="status3"] + .media-body, .text-circle[datastatus="status2"] + .media-body, .text-circle[datastatus="status1"] + .media-body,
+.text-circle[datastatus="status0"] + .media-body {
+    line-height: normal;
+    /*padding-left: 20px;*/
+}
+
+.text-circle[datastatus="statusYellow"] + .media-body p, .text-circle[datastatus="statusGreen"] + .media-body p, .text-circle[datastatus="statusRed"] + .media-body p,
+.text-circle[datastatus="status3"] + .media-body p, .text-circle[datastatus="status2"] + .media-body p, .text-circle[datastatus="status1"] + .media-body p,
+.text-circle[datastatus="status0"] + .media-body p {
+    margin-top: -3px;
+}
+
+.text-circle img {
+    width: 25px;
+}
+
+.truncate {
+    width: 95px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#TimeLineControl {
+    /*background-image: url('../Images/bgGrey.PNG');*/
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+.item-text {
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: #00a6ac;
+    font-size: 16px;
+}
+
+h2 strong, h2.text-label {
+    color: #00a6ac;
+}
+
+.text-label-small {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #c8c8c8;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#projectRisksCard, #projectMilestonesCard, #pprCheckInCard {
+    height: 130px;
+    padding-right: 0;
+}
+
+#mileStoneName, #riskList {
+    width: 120px;
+    padding-left: 15px;
+    border-left: 1px solid #c8c8c8;
+    word-break: break-all;
+    height:60px;
+    text-overflow:ellipsis;
+}
+
+#mileStoneName{
+    padding-right:10px;
+}
+
+#riskList {
+    height: 60px;
+    width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#mileStoneDay {
+    /*font-size: 60px;*/
+    float: left;
+    width: 60px;
+    height: 70px;
+    position: relative;
+    margin-right: 10px;
+
+    span {
+    /*left: -10px;*/
+    font-size: 60px;
+    }
+}
+
+#mileStoneMonth, #riskCount {
+    /*float:right;*/
+    font-size: 30px;
+    position: absolute;
+    top: -10px;
+}
+
+#mileStoneYear, #riskTag {
+    font-size: 18px;
+    top: 30px;
+    position: absolute;
+}
+
+#riskTag {
+    font-size: 11px;
+}
+
+#riskCategory {
+    background-color: $brand-danger;
+    margin-right: 10px;
+    padding-top: 22px;
+    line-height: normal;
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.media-right,
+.media > .pull-right, .media-left,
+.media > .pull-left {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 10px;
+}
+
+#riskCountDiv {
+    width: 130px;
+}
+
+.card {
+    background-image: url('../Images/stripe-background.png');
+    .edit {
+    display: none;
+    }
+
+}
+
+.img-circle {
+    width: 40px;
+}
+
+#checkInIcon {
+    background-color: #00868b;
+}
+
+.media-list {
+    margin-bottom: 10px;
+}
+
+#usefulLinksSection .media {
+    margin-top: 0;
+    line-height: 60px;
+}
+
+.text-label {
+    font-weight: normal;
+}
+
+.noDataMsg {
+    font-size: 12px;
+    color: #626262;
+    width: 100%;
+    /*padding-bottom:10px;*/
+}
+
+#projectCPCodesSection {
+    margin-bottom: 20px;
+}
+
+.pprRedirect {
+    text-decoration: none;
+    color: #626262;
+}
+
+#projectName {
+    margin-top: 0;
+}
+
+.msperson {
+    width: 80%;
+    display: inline-block;
+}
+
+#contributorHeader a {
+    margin-top: 10px;
+}
+
+.removePPRLink {
+    /*display:none;*/
+}
+/*==================================================
+=            Bootstrap 3 Media Queries             =
+==================================================*/
+
+
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+    #mileStoneDay span {
+        /*font-size: 20px;
+        float: left;
+        width: 20px;
+        height: 30px;
+        position: relative;
+        margin-right: 10px;*/
+    }
+
+    #projectRisksCard {
+        margin-bottom: 20px;
+    }
+}
+
+/* Extra Small Devices, Phones, IPhone */
+@media only screen and (min-width : 414px) {
+    #mileStoneName, #riskList {
+        width: 50%;
+        padding-left: 15px;
+        border-left: 1px solid #c8c8c8;
+        word-break: break-all;
+    }
+
+    #riskList {
+        float: right !important;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+    #projectRisksCardParent, #projectMilestonesCardParent {
+        margin-bottom: 20px;
+        width: 100%;
+        float: left;
+    }
+
+    #mileStoneName, #riskList {
+        width: 50%;
+        padding-left: 15px;
+        border-left: 1px solid #c8c8c8;
+        word-break: break-all;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 1024px) {
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+    #projectRisksCardParent, #projectMilestonesCardParent {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    #projectRisksCard {
+        margin-bottom: 0;
+    }
+
+    #mileStoneName, #riskList {
+        width: 50%;
+        padding-left: 15px;
+        border-left: 1px solid #c8c8c8;
+        word-break: break-all;
+    }
+
+    #riskList {
+        float: right !important;
+    }
+}
+
+
+
+/*==========  Non-Mobile First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+}

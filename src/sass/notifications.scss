@@ -1,0 +1,22 @@
+﻿@import "base/common";
+@import 'base/_base';
+@import 'components/_header';
+@import url('../lib_stylesheets/plugins/jqgrid/jquery-ui-custom.css');
+@import url('../lib_stylesheets/plugins/jqgrid/ui.jqgrid-bootstrap-ui.css');
+@import url('../lib_stylesheets/plugins/jqgrid/ui.jqgrid-bootstrap.css');
+@import url('../lib_stylesheets/plugins/jqgrid/jquery-ui-custom.css');
+@import 'components/grid';
+
+h3
+{
+    padding-bottom:10px;
+}
+.nav-pills li a
+{
+    padding:0;
+    font-size:14px;
+} 
+.showall,.showall:hover
+{
+    color:inherit;
+}

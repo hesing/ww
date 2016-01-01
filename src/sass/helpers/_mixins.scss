@@ -1,0 +1,16 @@
+$window-height: 100%;
+
+@mixin set-full-window-height($h){
+    /* Firefox */
+    height: -moz-calc(#{$window-height} - #{$h});
+    /* WebKit */
+    height: -webkit-calc(#{$window-height} - #{$h});
+    /* Opera */
+    height: -o-calc(#{$window-height} - #{$h});
+    /* Standard */
+    height: calc(#{$window-height} - #{$h});
+}
+
+@mixin drop-shadow($size: 2px, $color: rgba(0,0,0,0.5)) {
+  text-shadow: $size $size $size $color, $size (-$size) $size $color, (-$size) $size $size $color, (-$size) (-$size) $size $color;
+}
