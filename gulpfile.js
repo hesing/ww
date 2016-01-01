@@ -36,7 +36,7 @@ var
 	css = {
 	    in: source + 'sass/**/*.scss',
 	    watch: [source + 'sass/**/*'],
-	    out: dest + '/styles',
+	    out: dest + '/App_Stylesheets',
 	    sassOpts: {
 	        outputStyle: 'expanded', // compressed
 	        imagePath: '../images',
@@ -142,6 +142,11 @@ gulp.task('copy', function(){
       source + "views/**/*.*"
     ], { base: source })
 	  .pipe(gulp.dest(dest)); 	
+
+	// gulp.src([
+ //      dest + "App_Stylesheets/**/*.*"
+ //    ], { base: dest })
+	//   .pipe(gulp.dest("../Content/"));
   }
 });
 
