@@ -27,10 +27,8 @@ http://localhost:5000/screens/ProjectDetail.html
 
 https://github.com/hesing/reusable-components/tree/modular-template
 
-## Demo Url
-
 https://portal.azure.com/
 
-https://simplifyapi.herokuapp.com/ProjectTaskCreation
+## Demo Url
 
-https://simplifyapi.herokuapp.com/GetPrimaryProduct
+http://ww-demos.azurewebsites.net/screens/ProjectDetail.html
