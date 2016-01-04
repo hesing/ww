@@ -57,7 +57,18 @@
     {
         color:#505050;
     }
-}    
+}   
+
+.breadcrumb{
+    margin-top: -10px;
+}
+.breadcrumb > li + li:before {
+    color: #ccc;
+    content: "> ";
+    padding: 0 5px;
+}
+
+ 
 .proj-mobile
 {
     padding:5px 10px;
@@ -70,4 +81,3 @@
        padding: 5px 10px;
     }
     }
-

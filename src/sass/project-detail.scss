@@ -1,7 +1,9 @@
 ﻿@import "base/common";
 @import 'base/_base';
-@import 'components/_timeline';
 @import 'components/_header';
+@import 'components/_navmodules';
+@import 'components/_timeline';
+
 
 .add-to-watchList-project{
     margin-left: 10px;
@@ -143,10 +145,10 @@
     margin-bottom: 0;
 }
 
-h2 {
-    color: #00a6ac;
-    font-size: 16px;
-}
+// h2 {
+//     color: #00a6ac;
+//     font-size: 16px;
+// }
 
 h2 strong, h2.text-label {
     color: #00a6ac;

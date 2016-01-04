@@ -50,14 +50,7 @@
     right: 0;
 }
 
-.breadcrumb{
-    margin-top: -10px;
-}
-.breadcrumb > li + li:before {
-    color: #ccc;
-    content: "> ";
-    padding: 0 5px;
-}
+
 textarea.form-control
 {
     background-color:#fff;
